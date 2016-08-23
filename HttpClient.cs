@@ -12,7 +12,6 @@ namespace InstaSharp {
             try {
                 var request = HttpWebRequest.Create(uri);
                 request.Method = "GET";
-
                 return ReadResponse(request.GetResponse().GetResponseStream());
             }
             catch (WebException ex) {
